@@ -1,0 +1,94 @@
+.texto{
+    border: 2px solid #4b9978;
+    background-color: #61c79c;
+    max-width: 794px;
+    padding: 30px;
+    margin: 15px;
+    margin-bottom: 50px;
+    color: white;
+}
+video{
+    .trailer-inicio{
+        grid-area: trailer-inicio;
+        padding: 15px;
+        border-style: none;
+        border: 1px;
+        border-radius: 20px;
+    }
+}
+
+
+.trailer-inicio:hover{
+    transform: scale(1.2);
+    transition: transform .2s;
+  }
+
+.texto-inicio{
+    grid-area: texto-inicio;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.venta{
+    grid-area: venta;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+
+    .venta-links{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.requerimientos {
+    grid-area: requerimientos;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .requerimientos-lista{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .reque-windows, .reque-mac, .reque-linus{
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 0;
+            text-align: center;
+            
+            .titulo-reque{
+                font-size: xx-large;
+            }
+            .texto-reque{
+                font-size: large;
+            }
+        }
+
+        b{
+            font-weight: bold;
+        }
+
+    }
+}
+.padre-inicio{
+    display: grid;
+    margin-top: 20px;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    justify-items:center;
+    align-items: center;
+    grid-template-areas: 
+    "trailer-inicio texto-inicio"
+    "venta venta"
+    "requerimientos requerimientos";
+}

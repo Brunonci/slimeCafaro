@@ -1,0 +1,95 @@
+/* contacto.html */
+.contacto{
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        padding: 20px 20px;
+        color: #0c056d;
+    }
+}
+
+#nombreApellido{
+    grid-area: nombreApellido;
+}
+#email{
+    grid-area: email;
+}
+#telefono{
+    grid-area: telefono;
+}
+
+#motivo{
+    grid-area: motivo;
+
+}
+#mensaje{
+    grid-area: mensaje;
+}
+
+#boton{
+    grid-area: 4 / 3 / 5 / 4;
+}
+
+.form-p{
+    padding: 0 200px 0 200px;
+    text-align: center;
+}
+
+label{
+    color: #0c056d;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+    
+}
+
+.form-control {
+    width: 100%;
+    height: 50px;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 2px solid #ced4da;
+    border-radius: 0.25rem;
+}
+
+.formpadre{
+    display: grid;
+    margin: 50px;
+    gap: 50px;
+    grid-template-areas: 
+        " nombreApellido email   telefono "
+        " motivo         motivo  motivo"
+        " mensaje        mensaje mensaje"
+        " boton          boton   boton"
+        ;
+        
+    grid-template-rows: auto; 
+    grid-template-columns: 1fr 1fr 1fr;
+    ;
+}
+
+.boton{
+    background-color:#0c056d;
+    width:140px;
+    height:50px;
+    border-width:1px;
+    font-size:16px;
+    color: #fff;
+    border-color:#4e6096;
+    border-radius:10px;
+    box-shadow: 0px 0px 5px 2px #9fb4f2;
+    text-shadow: 0px 1px 0px #283966;
+    background:linear-gradient(rgb(120, 146, 194), #476e9e);
+}
+.boton:hover{
+    background: linear-gradient(#476e9e, rgb(120, 146, 194)); 
+}
+

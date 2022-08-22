@@ -1,0 +1,96 @@
+.slimes-text{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 50px;
+    h1{
+        color: black;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
+.titulo-slimes{
+    text-align: center;
+}
+.linea {
+    border-top: 2px solid #AA96DA;
+    height: 2px;
+    padding: 0;
+    margin: 20px auto 0 auto;
+    width: 80%;
+}
+.defi-slimes{
+    text-align: center;
+}
+.slimes{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .maincontainer{
+        width: 350px;
+        height: 350px;
+        margin: 10px;
+        .back
+        {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .front{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .h2
+            {
+                text-align: center;
+                padding: 10px;
+                color: #000;
+            }
+            img{
+                width: 250px;
+                height: 250px;
+            }
+        }
+        img{
+        border-radius: 10px;
+        }
+    }
+}
+
+.maincontainer > .front
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    width: 350px;
+    height: 350px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+
+.maincontainer > .back
+{
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #262626;
+    color: #fff;
+    width: 350px;
+    height: 350px;
+    border-radius: 10px;
+    padding: 5px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+.maincontainer:hover > .front
+{
+    transform: perspective(600px) rotateY(-180deg);
+}
+.maincontainer:hover > .back
+{
+    transform: perspective(600px) rotateY(0deg);
+}
