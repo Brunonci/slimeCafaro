@@ -7,10 +7,8 @@
     ul{
         display: flex;
         flex-direction: column;
-        padding-left: 0;
-        margin-bottom: 0;
-        list-style: none;
     }
+
     #boton{
         grid-area: boton;
     }
@@ -27,14 +25,6 @@
         "trailer-inicio"
         "venta"
         "requerimientos";
-    }
-    header{
-        flex-direction: column;
-    }
-    ul{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
     }
     .form-p{
         padding: 0 10px 0;

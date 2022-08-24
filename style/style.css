@@ -419,9 +419,6 @@ label {
   ul {
     display: flex;
     flex-direction: column;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
   }
   #boton {
     grid-area: boton;
@@ -435,14 +432,6 @@ label {
     justify-items: center;
     align-items: center;
     grid-template-areas: "texto-inicio" "trailer-inicio" "venta" "requerimientos";
-  }
-  header {
-    flex-direction: column;
-  }
-  ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
   }
   .form-p {
     padding: 0 10px 0;
