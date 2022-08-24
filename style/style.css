@@ -19,6 +19,14 @@ nav ul li {
   padding: 10px 10px;
   display: inline-block;
 }
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: large;
+  color: #0c056d;
+}
 
 footer {
   padding: 25px;
@@ -115,20 +123,23 @@ video .trailer-inicio {
   grid-template-areas: "trailer-inicio texto-inicio" "venta venta" "requerimientos requerimientos";
 }
 
-.screenshot {
+.galeria {
+  margin-top: 20px;
+}
+.galeria .screenshot {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
 }
-.screenshot .screenshot-grid {
+.galeria .screenshot .screenshot-grid {
   width: 80%;
   margin: 20px auto 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-gap: 10px;
 }
-.screenshot .screenshot-grid img {
+.galeria .screenshot .screenshot-grid img {
   width: 100%;
   cursor: pointer;
   transition: 0.4s;
@@ -195,11 +206,12 @@ video .trailer-inicio {
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  margin: 50px;
+  margin: 20px;
 }
 .slimes-text h1 {
-  color: black;
+  color: #0c056d;
   text-align: center;
+  padding: 20px;
 }
 .slimes-text p {
   text-align: center;
@@ -246,7 +258,7 @@ video .trailer-inicio {
 .slimes .maincontainer .front .h2 {
   text-align: center;
   padding: 10px;
-  color: #000;
+  color: #0c056d;
 }
 .slimes .maincontainer .front img {
   width: 250px;
@@ -292,7 +304,7 @@ video .trailer-inicio {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 15px;
+  margin: 20px;
 }
 .proximamente .trailerSR2 {
   display: flex;
@@ -308,8 +320,8 @@ video .trailer-inicio {
   flex-direction: column;
   align-items: center;
 }
-.contacto h2 {
-  padding: 20px 20px;
+.contacto h1 {
+  padding: 20px;
   color: #0c056d;
 }
 
@@ -475,15 +487,6 @@ body {
   background-color: #A8D8EA;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-}
-
-a {
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: large;
-  color: #0c056d;
 }
 
 h1 {

@@ -9,13 +9,24 @@ header{
     padding: 20px;
     z-index:100;
 }
+
+
 nav{
     ul{
         margin: 0;
     
         li{
             padding: 10px 10px;
-            display: inline-block; 
+            display: inline-block;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: large;
+                color: #0c056d;
+            }
+             
         }
     }
     
