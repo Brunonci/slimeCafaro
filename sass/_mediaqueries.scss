@@ -64,9 +64,17 @@
 }
   
 /*Tablets*/
-@media(min-width:640px) and (max-width: 1024px){
-    header{
+@media(min-width:640px) and (max-width: 992px){
+    #navbarNav{
+        justify-content: center;
+    }
+
+    ul{
+        display: flex;
         flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
     }
   
     .form-p{
@@ -78,7 +86,7 @@
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto;
         gap: 1px;
-        margin: 10px;
+        margin: 0px;
         justify-items:center;
         align-items: center;
         grid-template-areas: 

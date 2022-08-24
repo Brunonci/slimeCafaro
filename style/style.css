@@ -5,13 +5,14 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 20px;
   z-index: 100;
 }
 
+nav {
+  padding-left: 0;
+  margin-bottom: 0;
+}
 nav ul {
   margin: 0;
 }
@@ -26,6 +27,14 @@ nav ul li a {
   font-weight: 500;
   font-size: large;
   color: #0c056d;
+}
+
+container-fluid {
+  display: flex;
+}
+
+.navbar-collapse {
+  flex-grow: 0;
 }
 
 footer {
@@ -451,9 +460,16 @@ label {
   }
 }
 /*Tablets*/
-@media (min-width: 640px) and (max-width: 1024px) {
-  header {
+@media (min-width: 640px) and (max-width: 992px) {
+  #navbarNav {
+    justify-content: center;
+  }
+  ul {
+    display: flex;
     flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
   }
   .form-p {
     padding: 0 0 0 0;
@@ -463,7 +479,7 @@ label {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     gap: 1px;
-    margin: 10px;
+    margin: 0px;
     justify-items: center;
     align-items: center;
     grid-template-areas: "texto-inicio" "trailer-inicio" "venta" "requerimientos";

@@ -3,21 +3,20 @@ header{
     position: sticky;
     top: 0;
     left: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     z-index:100;
 }
 
-
 nav{
+    padding-left: 0;
+    margin-bottom: 0;
     ul{
         margin: 0;
-    
+
         li{
             padding: 10px 10px;
             display: inline-block;
+
             a{
                 text-decoration: none;
                 text-transform: uppercase;
@@ -30,4 +29,11 @@ nav{
         }
     }
     
+}
+
+container-fluid{
+    display: flex;
+}
+.navbar-collapse{
+    flex-grow: 0;
 }
