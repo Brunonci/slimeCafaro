@@ -1,5 +1,16 @@
 /*Celulares*/
 @media(max-width:640px){
+    #navbarNav{
+        justify-content: center;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+    }
     #boton{
         grid-area: boton;
     }
