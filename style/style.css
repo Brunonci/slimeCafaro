@@ -1,4 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #A8D8EA;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+h1 {
+  padding: 20px 20px;
+  color: #0c056d;
+}
+
+p {
+  font-size: larger;
+}
+
 header {
   background-color: #AA96DA;
   position: -webkit-sticky;
@@ -64,11 +84,6 @@ video .trailer-inicio {
   border-radius: 20px;
 }
 
-.trailer-inicio:hover {
-  transform: scale(1.2);
-  transition: transform 0.2s;
-}
-
 .texto-inicio {
   grid-area: texto-inicio;
   display: flex;
@@ -109,6 +124,9 @@ video .trailer-inicio {
   flex-shrink: 1;
   flex-basis: 0;
   text-align: center;
+  margin: 20px;
+  border: 2px solid #4b9978;
+  background-color: #61c79c;
 }
 .requerimientos .requerimientos-lista .reque-windows .titulo-reque, .requerimientos .requerimientos-lista .reque-mac .titulo-reque, .requerimientos .requerimientos-lista .reque-linus .titulo-reque {
   font-size: xx-large;
@@ -125,7 +143,7 @@ video .trailer-inicio {
   margin-top: 20px;
   width: 100%;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 1fr auto auto;
   gap: 10px;
   justify-items: center;
   align-items: center;
@@ -492,23 +510,4 @@ label {
   }
 }
 /*paleta de colores https://colorhunt.co/palette/fcffa6c1ffd7b5deffcab8ff
-*/
-* {
-  padding: 0;
-  margin: 0;
-}
-
-body {
-  background-color: #A8D8EA;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-}
-
-h1 {
-  padding: 20px 20px;
-  color: #0c056d;
-}
-
-p {
-  font-size: larger;
-}/*# sourceMappingURL=style.css.map */
+*//*# sourceMappingURL=style.css.map */
